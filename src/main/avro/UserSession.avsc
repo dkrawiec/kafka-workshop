@@ -1,0 +1,25 @@
+{
+  "type": "record",
+  "name": "UserSession",
+  "namespace": "com.virtuslab.kafka.workshops.schema",
+  "fields": [
+    {
+      "name": "sessionId",
+      "type": {
+        "type": "string",
+        "avro.java.string": "String"
+      }
+    },
+    {
+      "name": "userId",
+      "type": [
+        "null",
+        {
+          "type": "string",
+          "avro.java.string": "String"
+        }
+      ],
+      "default": null
+    }
+  ]
+}
