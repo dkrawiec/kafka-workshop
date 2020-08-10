@@ -5,7 +5,7 @@ import org.apache.kafka.common.serialization.StringSerializer
 
 import scala.collection.JavaConverters._
 
-object KafkaProducer {
+object WorkshopProducer {
   def main(args: Array[String]): Unit = {
     val producer = new KafkaProducer[String, String](
       Map[String, Object](

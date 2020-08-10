@@ -5,7 +5,7 @@ import org.apache.kafka.common.serialization.StringDeserializer
 
 import scala.collection.JavaConverters._
 
-object KafkaConsumer {
+object WorkshopConsumer {
   def main(args: Array[String]): Unit = {
     val consumer = new KafkaConsumer[String, String](
       Map[String, Object](
