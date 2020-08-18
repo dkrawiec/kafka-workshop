@@ -3,7 +3,7 @@ package com.virtuslab.kafka.workshops
 import org.apache.kafka.clients.producer.KafkaProducer
 import org.apache.kafka.common.serialization.StringSerializer
 
-import scala.collection.JavaConverters._
+import scala.jdk.CollectionConverters._
 
 object WorkshopProducer {
   def main(args: Array[String]): Unit = {

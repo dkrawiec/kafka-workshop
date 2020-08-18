@@ -1,0 +1,18 @@
+{
+  "type": "record",
+  "name": "OrderedProduct",
+  "namespace": "com.virtuslab.kafka.workshops.schema",
+  "fields": [
+    {
+      "name": "productId",
+      "type": {
+        "type": "string",
+        "avro.java.string": "String"
+      }
+    },
+    {
+      "name": "quantity",
+      "type": "int"
+    }
+  ]
+}

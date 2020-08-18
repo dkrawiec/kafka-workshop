@@ -1,0 +1,26 @@
+{
+  "type": "record",
+  "name": "ItemReadyToBeShipped",
+  "namespace": "com.virtuslab.kafka.workshops.schema",
+  "fields": [
+    {
+      "name": "orderId",
+      "type": {
+        "type": "string",
+        "avro.java.string": "String"
+      }
+    },
+    {
+      "name": "itemId",
+      "type": {
+        "type": "string",
+        "avro.java.string": "String"
+      }
+    },
+    {
+      "name": "readyTimestamp",
+      "type": "long",
+      "logicalType": "timestamp-millis"
+    }
+  ]
+}

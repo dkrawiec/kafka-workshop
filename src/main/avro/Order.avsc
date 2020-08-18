@@ -1,0 +1,40 @@
+{
+  "type": "record",
+  "name": "Order",
+  "namespace": "com.virtuslab.kafka.workshops.schema",
+  "fields": [
+    {
+      "name": "userId",
+      "type": {
+        "type": "string",
+        "avro.java.string": "String"
+      }
+    },
+    {
+      "name": "orderId",
+      "type": {
+        "type": "string",
+        "avro.java.string": "String"
+      }
+    },
+    {
+      "name": "items",
+      "type": {
+        "type": "array",
+        "items": "com.virtuslab.kafka.workshops.schema.OrderedProduct"
+      }
+    },
+    {
+      "name": "totalPrice",
+      "type": {
+        "type": "string",
+        "avro.java.string": "String"
+       }
+    },
+    {
+      "name": "createdTimestamp",
+      "type": "long",
+      "logicalType": "timestamp-millis"
+    }
+  ]
+}

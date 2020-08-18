@@ -1,0 +1,18 @@
+{
+  "type": "record",
+  "name": "OrderIsReady",
+  "namespace": "com.virtuslab.kafka.workshops.schema",
+  "fields": [
+    {
+      "name": "order",
+      "type": {
+        "type": "com.virtuslab.kafka.workshops.schema.Order"
+      }
+    },
+    {
+      "name": "readyTimestamp",
+      "type": "long",
+      "logicalType": "timestamp-millis"
+    }
+  ]
+}
